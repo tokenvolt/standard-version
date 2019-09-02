@@ -576,7 +576,7 @@ describe('cli', function () {
     })
 
     describe('release-as-exact', function () {
-      it('releases as v100.0.0', function () {
+      it.only('releases as v100.0.0', function () {
         let originVer = '1.0.0'
         writePackageJson(originVer)
         fs.writeFileSync('CHANGELOG.md', 'legacy header format<a name="1.0.0">\n', 'utf-8')
